@@ -15,7 +15,7 @@ function VerticalSecond() {
 
   return (
     <div>
-      <h1>Numbers from 200 to 300:</h1>
+      <h1>Numbers from 200 to 300 ok:</h1>
       <div className="vertical">
         {numbers.map((number) => {
           return (
