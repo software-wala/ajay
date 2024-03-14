@@ -1,26 +1,26 @@
-import { React, useState } from "react";
-// import styles from "./Horizontal.module.css";
-export default function Horizontal() {
-  const [numb, setNumb] = useState();
+import React, { useState } from "react";
+import "./Horizontal.css";
+function Horizontal() {
+  const [numbers, setNumbers] = useState([]);
 
   useState(() => {
-    const number = [];
-    for (let i = 100; i < 200; i++) {
-      number.push(i);
-
-      console.log(number);
+    const numbersArray = [];
+    for (let i = 100; i <= 200; i++) {
+      numbersArray.push(i);
     }
-
-    setNumb(number);
+    setNumbers(numbersArray);
   });
 
   return (
-    <>
-      {/* <p>{numb}</p> */}
-
-      {numb.map((numbs) => (
-        <p>{numbs}</p>
-      ))}
-    </>
+    <div>
+      <h1>Numbers from 100 to 200:</h1>
+      <div className="horizontal">
+        {numbers.map((number) => (
+          <p key={number}>{number}</p>
+        ))}
+      </div>
+    </div>
   );
 }
+
+export default Horizontal;

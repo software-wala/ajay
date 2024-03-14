@@ -1,13 +1,13 @@
 import Vertical from "../public/Components/Vertical";
 import VerticalSecond from "../public/Components/VerticalSecond";
 import React from "react";
-import Master from "../public/Components/Master";
+import Horizontal from "../public/Components/Horizontal";
 export default function App() {
   return (
     <div>
       <Vertical />
+      <Horizontal />
       <VerticalSecond />
-      <Master />{" "}
     </div>
   );
 }
